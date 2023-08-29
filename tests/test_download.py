@@ -5,7 +5,7 @@ def test_download_audio_file():
 
     from athena.model import Downloader
 
-    url = "https://www.youtube.com/watch?v=IDB_3S1ezsc"
+    url = "https://www.youtube.com/watch?v=HBz4pBSIsXI"
     downloader = Downloader()
     downloader.download(url)
 

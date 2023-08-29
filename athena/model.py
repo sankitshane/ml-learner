@@ -1,4 +1,6 @@
 from pytube import YouTube
+from transformers import pipeline
+
 
 class Downloader:
     def download(self, url):
@@ -13,3 +15,13 @@ class Downloader:
 
         # Download the audio
         audio_stream.download(output_path=output_path, filename="audio.mp4")
+
+
+class Converter:
+    def __init__(self):
+        self.model = "facebook/wav2vec2-large-960h-lv60-self"
+
+    def speech_to_text(self, path):
+        pipe = pipeline(model = self.model)
+        text = pipe(path, chunk_length_s=10) 
+        return text

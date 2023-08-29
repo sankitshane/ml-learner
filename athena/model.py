@@ -1,9 +1,9 @@
 from pytube import YouTube
 from transformers import pipeline
-
+import youtube_dl
 
 class Downloader:
-    def download(self, url):
+    def download_video(self, url):
         yt = YouTube(url)
 
         # Get the highest quality audio stream
@@ -15,6 +15,26 @@ class Downloader:
 
         # Download the audio
         audio_stream.download(output_path=output_path, filename="audio.mp4")
+
+    def download_caption(self, url):
+        options = {
+            'writesubtitles': True,
+            'allsubtitles': True,
+            'skip_download': True,
+        }
+        video_caption = {"caption": []}
+        with youtube_dl.YoutubeDL(options) as ydl:
+            info_dict = ydl.extract_info(url, download=False)
+            if 'subtitles' in info_dict:
+                for lang, captions in info_dict['subtitles'].items():
+                    video_caption["lang"] = lang
+                    for caption in captions:
+                        video_caption["caption"].append(
+                            f"Caption: {caption['ext']}, url: {caption['url']}"
+                        )
+                        
+        
+        return video_caption
 
 
 class Converter:

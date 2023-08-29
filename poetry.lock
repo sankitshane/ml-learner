@@ -1112,7 +1112,23 @@ secure = ["certifi", "cryptography (>=1.9)", "idna (>=2.0.0)", "pyopenssl (>=17.
 socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
 zstd = ["zstandard (>=0.18.0)"]
 
+[[package]]
+name = "youtube-dl"
+version = "2021.12.17"
+description = "YouTube video downloader"
+category = "main"
+optional = false
+python-versions = "*"
+files = []
+develop = false
+
+[package.source]
+type = "git"
+url = "https://github.com/ytdl-org/youtube-dl.git"
+reference = "HEAD"
+resolved_reference = "86e3cf5e5849aefcc540c19bb5fa5ab7f470d1c1"
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "79d314fde624e2308c982d798dfc6eae7308c43292d9b14aeb8d0d76a2dfadf9"
+content-hash = "b02177e14be170ca99d0fe816c5647189633171221da34c9f234224d67f36c66"

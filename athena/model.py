@@ -1,6 +1,7 @@
+import youtube_dl
 from pytube import YouTube
 from transformers import pipeline
-import youtube_dl
+
 
 class Downloader:
     def download_video(self, url):
@@ -32,8 +33,7 @@ class Downloader:
                         video_caption["caption"].append(
                             f"Caption: {caption['ext']}, url: {caption['url']}"
                         )
-                        
-        
+
         return video_caption
 
 
@@ -42,6 +42,6 @@ class Converter:
         self.model = "facebook/wav2vec2-large-960h-lv60-self"
 
     def speech_to_text(self, path):
-        pipe = pipeline(model = self.model)
-        text = pipe(path, chunk_length_s=10) 
+        pipe = pipeline(model=self.model)
+        text = pipe(path, chunk_length_s=10)
         return text

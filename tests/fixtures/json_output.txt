@@ -1,0 +1,1561 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 120,
+    "dDurationMs": 1370,
+    "segs": [ {
+      "utf8": "- Hey, everyone, Alec here with VEED."
+    } ]
+  }, {
+    "tStartMs": 1490,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "And in this video,"
+    } ]
+  }, {
+    "tStartMs": 2323,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "I'm going to be showing you"
+    } ]
+  }, {
+    "tStartMs": 3156,
+    "dDurationMs": 2374,
+    "segs": [ {
+      "utf8": "how to add subtitles to a YouTube video."
+    } ]
+  }, {
+    "tStartMs": 5530,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "So YouTube has recently updated"
+    } ]
+  }, {
+    "tStartMs": 7450,
+    "dDurationMs": 1120,
+    "segs": [ {
+      "utf8": "their upload process."
+    } ]
+  }, {
+    "tStartMs": 8570,
+    "dDurationMs": 1620,
+    "segs": [ {
+      "utf8": "And now during the upload process,"
+    } ]
+  }, {
+    "tStartMs": 10190,
+    "dDurationMs": 1340,
+    "segs": [ {
+      "utf8": "you can add subtitles"
+    } ]
+  }, {
+    "tStartMs": 11530,
+    "dDurationMs": 1530,
+    "segs": [ {
+      "utf8": "while you're uploading your video."
+    } ]
+  }, {
+    "tStartMs": 13060,
+    "dDurationMs": 1280,
+    "segs": [ {
+      "utf8": "Now, in this video, I'm going to walk you"
+    } ]
+  }, {
+    "tStartMs": 14340,
+    "dDurationMs": 1150,
+    "segs": [ {
+      "utf8": "through that step by step."
+    } ]
+  }, {
+    "tStartMs": 15490,
+    "dDurationMs": 1300,
+    "segs": [ {
+      "utf8": "And we'll be adding our subtitles"
+    } ]
+  }, {
+    "tStartMs": 16790,
+    "dDurationMs": 1490,
+    "segs": [ {
+      "utf8": "to the YouTube video manually,"
+    } ]
+  }, {
+    "tStartMs": 18280,
+    "dDurationMs": 1180,
+    "segs": [ {
+      "utf8": "but after I've shown you this,"
+    } ]
+  }, {
+    "tStartMs": 19460,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "I'm gonna be showing you"
+    } ]
+  }, {
+    "tStartMs": 20293,
+    "dDurationMs": 2777,
+    "segs": [ {
+      "utf8": "how to automatically\ngenerate a subtitle SRT file"
+    } ]
+  }, {
+    "tStartMs": 23070,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "so you can upload your subtitles"
+    } ]
+  }, {
+    "tStartMs": 24750,
+    "dDurationMs": 2060,
+    "segs": [ {
+      "utf8": "with your YouTube video at the same time,"
+    } ]
+  }, {
+    "tStartMs": 26810,
+    "dDurationMs": 1280,
+    "segs": [ {
+      "utf8": "in just a few clicks."
+    } ]
+  }, {
+    "tStartMs": 28090,
+    "dDurationMs": 950,
+    "segs": [ {
+      "utf8": "And with that being said,"
+    } ]
+  }, {
+    "tStartMs": 29040,
+    "dDurationMs": 890,
+    "segs": [ {
+      "utf8": "let's get started."
+    } ]
+  }, {
+    "tStartMs": 29930,
+    "dDurationMs": 1180,
+    "segs": [ {
+      "utf8": "So once we're on YouTube,"
+    } ]
+  }, {
+    "tStartMs": 31110,
+    "dDurationMs": 1390,
+    "segs": [ {
+      "utf8": "to add subtitles to our video"
+    } ]
+  }, {
+    "tStartMs": 32500,
+    "dDurationMs": 880,
+    "segs": [ {
+      "utf8": "while we upload it,"
+    } ]
+  }, {
+    "tStartMs": 33380,
+    "dDurationMs": 1230,
+    "segs": [ {
+      "utf8": "we're just going to upload a video"
+    } ]
+  }, {
+    "tStartMs": 34610,
+    "dDurationMs": 1140,
+    "segs": [ {
+      "utf8": "as we would normally."
+    } ]
+  }, {
+    "tStartMs": 35750,
+    "dDurationMs": 1040,
+    "segs": [ {
+      "utf8": "So here I'm just gonna click"
+    } ]
+  }, {
+    "tStartMs": 36790,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "on the create button right here."
+    } ]
+  }, {
+    "tStartMs": 38270,
+    "dDurationMs": 2180,
+    "segs": [ {
+      "utf8": "And then we're just gonna\nselect Upload video."
+    } ]
+  }, {
+    "tStartMs": 40450,
+    "dDurationMs": 2170,
+    "segs": [ {
+      "utf8": "Now we're taken to the\nYouTube video upload page"
+    } ]
+  }, {
+    "tStartMs": 42620,
+    "dDurationMs": 1460,
+    "segs": [ {
+      "utf8": "and this is where I'm going to select"
+    } ]
+  }, {
+    "tStartMs": 44080,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "the YouTube video"
+    } ]
+  }, {
+    "tStartMs": 44913,
+    "dDurationMs": 1487,
+    "segs": [ {
+      "utf8": "I want to upload to YouTube."
+    } ]
+  }, {
+    "tStartMs": 46400,
+    "dDurationMs": 1630,
+    "segs": [ {
+      "utf8": "So I click on Select Files"
+    } ]
+  }, {
+    "tStartMs": 48030,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "and then here"
+    } ]
+  }, {
+    "tStartMs": 48863,
+    "dDurationMs": 1337,
+    "segs": [ {
+      "utf8": "I'm just going to select\nmy YouTube videos."
+    } ]
+  }, {
+    "tStartMs": 50200,
+    "dDurationMs": 1980,
+    "segs": [ {
+      "utf8": "As you see, I've got it here ready."
+    } ]
+  }, {
+    "tStartMs": 52180,
+    "dDurationMs": 900,
+    "segs": [ {
+      "utf8": "I click Open"
+    } ]
+  }, {
+    "tStartMs": 53080,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "and now it's being uploaded to YouTube."
+    } ]
+  }, {
+    "tStartMs": 55830,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "So as you can see"
+    } ]
+  }, {
+    "tStartMs": 56663,
+    "dDurationMs": 1117,
+    "segs": [ {
+      "utf8": "our video is now being uploaded"
+    } ]
+  }, {
+    "tStartMs": 57780,
+    "dDurationMs": 960,
+    "segs": [ {
+      "utf8": "and here we can fill out"
+    } ]
+  }, {
+    "tStartMs": 58740,
+    "dDurationMs": 1370,
+    "segs": [ {
+      "utf8": "all the information for our video"
+    } ]
+  }, {
+    "tStartMs": 60110,
+    "dDurationMs": 960,
+    "segs": [ {
+      "utf8": "as if we would normally."
+    } ]
+  }, {
+    "tStartMs": 61070,
+    "dDurationMs": 2060,
+    "segs": [ {
+      "utf8": "So when you upload a\nvideo normally to YouTube,"
+    } ]
+  }, {
+    "tStartMs": 63130,
+    "dDurationMs": 1900,
+    "segs": [ {
+      "utf8": "you go ahead, you fill out the title,"
+    } ]
+  }, {
+    "tStartMs": 65030,
+    "dDurationMs": 1310,
+    "segs": [ {
+      "utf8": "you fill out the description."
+    } ]
+  }, {
+    "tStartMs": 66340,
+    "dDurationMs": 1170,
+    "segs": [ {
+      "utf8": "You might add a thumbnail,"
+    } ]
+  }, {
+    "tStartMs": 67510,
+    "dDurationMs": 1670,
+    "segs": [ {
+      "utf8": "you might add some tags at the bottom."
+    } ]
+  }, {
+    "tStartMs": 69180,
+    "dDurationMs": 1320,
+    "segs": [ {
+      "utf8": "Then once we click Next"
+    } ]
+  }, {
+    "tStartMs": 70500,
+    "dDurationMs": 910,
+    "segs": [ {
+      "utf8": "to go to the next step"
+    } ]
+  }, {
+    "tStartMs": 71410,
+    "dDurationMs": 1150,
+    "segs": [ {
+      "utf8": "for the video elements,"
+    } ]
+  }, {
+    "tStartMs": 72560,
+    "dDurationMs": 1890,
+    "segs": [ {
+      "utf8": "here you'll notice that at the top,"
+    } ]
+  }, {
+    "tStartMs": 74450,
+    "dDurationMs": 1130,
+    "segs": [ {
+      "utf8": "we have this new section,"
+    } ]
+  }, {
+    "tStartMs": 75580,
+    "dDurationMs": 2260,
+    "segs": [ {
+      "utf8": "which is Add subtitles right next to it."
+    } ]
+  }, {
+    "tStartMs": 77840,
+    "dDurationMs": 1170,
+    "segs": [ {
+      "utf8": "As you can see, New."
+    } ]
+  }, {
+    "tStartMs": 79010,
+    "dDurationMs": 1290,
+    "segs": [ {
+      "utf8": "Now, there's always been the possibility"
+    } ]
+  }, {
+    "tStartMs": 80300,
+    "dDurationMs": 2010,
+    "segs": [ {
+      "utf8": "to add subtitles to a YouTube video,"
+    } ]
+  }, {
+    "tStartMs": 82310,
+    "dDurationMs": 2300,
+    "segs": [ {
+      "utf8": "but here YouTube implemented this section"
+    } ]
+  }, {
+    "tStartMs": 84610,
+    "dDurationMs": 2050,
+    "segs": [ {
+      "utf8": "directly within the upload process"
+    } ]
+  }, {
+    "tStartMs": 86660,
+    "dDurationMs": 2150,
+    "segs": [ {
+      "utf8": "because they know how\nimportant subtitles are"
+    } ]
+  }, {
+    "tStartMs": 88810,
+    "dDurationMs": 1590,
+    "segs": [ {
+      "utf8": "and how important they're becoming"
+    } ]
+  }, {
+    "tStartMs": 90400,
+    "dDurationMs": 2360,
+    "segs": [ {
+      "utf8": "because video content\nis dominating online."
+    } ]
+  }, {
+    "tStartMs": 92760,
+    "dDurationMs": 1290,
+    "segs": [ {
+      "utf8": "And it even says just below,"
+    } ]
+  }, {
+    "tStartMs": 94050,
+    "dDurationMs": 1180,
+    "segs": [ {
+      "utf8": "Reach a broader audience"
+    } ]
+  }, {
+    "tStartMs": 95230,
+    "dDurationMs": 1970,
+    "segs": [ {
+      "utf8": "by adding subtitles to your video."
+    } ]
+  }, {
+    "tStartMs": 97200,
+    "dDurationMs": 1150,
+    "segs": [ {
+      "utf8": "So even YouTube knows"
+    } ]
+  }, {
+    "tStartMs": 98350,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "that if you add subtitles to video,"
+    } ]
+  }, {
+    "tStartMs": 100270,
+    "dDurationMs": 1540,
+    "segs": [ {
+      "utf8": "you're going to get more reach"
+    } ]
+  }, {
+    "tStartMs": 101810,
+    "dDurationMs": 1030,
+    "segs": [ {
+      "utf8": "and more views."
+    } ]
+  }, {
+    "tStartMs": 102840,
+    "dDurationMs": 1160,
+    "segs": [ {
+      "utf8": "Now to add the subtitles,"
+    } ]
+  }, {
+    "tStartMs": 104000,
+    "dDurationMs": 1940,
+    "segs": [ {
+      "utf8": "all we're going to do is click on Add"
+    } ]
+  }, {
+    "tStartMs": 105940,
+    "dDurationMs": 1640,
+    "segs": [ {
+      "utf8": "right next to add subtitles."
+    } ]
+  }, {
+    "tStartMs": 107580,
+    "dDurationMs": 1660,
+    "segs": [ {
+      "utf8": "And now you might recognize this."
+    } ]
+  }, {
+    "tStartMs": 109240,
+    "dDurationMs": 2730,
+    "segs": [ {
+      "utf8": "This is the YouTube subtitle editor."
+    } ]
+  }, {
+    "tStartMs": 111970,
+    "dDurationMs": 1250,
+    "segs": [ {
+      "utf8": "Now here, as you can see,"
+    } ]
+  }, {
+    "tStartMs": 113220,
+    "dDurationMs": 1010,
+    "segs": [ {
+      "utf8": "we've got three options."
+    } ]
+  }, {
+    "tStartMs": 114230,
+    "dDurationMs": 940,
+    "segs": [ {
+      "utf8": "We can upload a file"
+    } ]
+  }, {
+    "tStartMs": 115170,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "that we've already created."
+    } ]
+  }, {
+    "tStartMs": 116170,
+    "dDurationMs": 1670,
+    "segs": [ {
+      "utf8": "So this could be an SRT file."
+    } ]
+  }, {
+    "tStartMs": 117840,
+    "dDurationMs": 1200,
+    "segs": [ {
+      "utf8": "However, we don't have one,"
+    } ]
+  }, {
+    "tStartMs": 119040,
+    "dDurationMs": 1120,
+    "segs": [ {
+      "utf8": "but stick around I'm going to show you"
+    } ]
+  }, {
+    "tStartMs": 120160,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "how to generate one of these"
+    } ]
+  }, {
+    "tStartMs": 121160,
+    "dDurationMs": 1490,
+    "segs": [ {
+      "utf8": "automatically for your video."
+    } ]
+  }, {
+    "tStartMs": 122650,
+    "dDurationMs": 1150,
+    "segs": [ {
+      "utf8": "Then we can Auto-sync."
+    } ]
+  }, {
+    "tStartMs": 123800,
+    "dDurationMs": 870,
+    "segs": [ {
+      "utf8": "And this is basically,"
+    } ]
+  }, {
+    "tStartMs": 124670,
+    "dDurationMs": 2060,
+    "segs": [ {
+      "utf8": "if you have a full transcript"
+    } ]
+  }, {
+    "tStartMs": 126730,
+    "dDurationMs": 1930,
+    "segs": [ {
+      "utf8": "of your video script,"
+    } ]
+  }, {
+    "tStartMs": 128660,
+    "dDurationMs": 1580,
+    "segs": [ {
+      "utf8": "you can basically just copy and paste it"
+    } ]
+  }, {
+    "tStartMs": 130240,
+    "dDurationMs": 1660,
+    "segs": [ {
+      "utf8": "and then YouTube will auto sync it up"
+    } ]
+  }, {
+    "tStartMs": 131900,
+    "dDurationMs": 2130,
+    "segs": [ {
+      "utf8": "to match the words when you say them."
+    } ]
+  }, {
+    "tStartMs": 134030,
+    "dDurationMs": 1910,
+    "segs": [ {
+      "utf8": "And then obviously\nwe've got Type manually."
+    } ]
+  }, {
+    "tStartMs": 135940,
+    "dDurationMs": 2380,
+    "segs": [ {
+      "utf8": "And this is where you can\nadd subtitles in manually"
+    } ]
+  }, {
+    "tStartMs": 138320,
+    "dDurationMs": 1570,
+    "segs": [ {
+      "utf8": "by clicking in the time"
+    } ]
+  }, {
+    "tStartMs": 139890,
+    "dDurationMs": 2230,
+    "segs": [ {
+      "utf8": "and then typing out what I say."
+    } ]
+  }, {
+    "tStartMs": 142120,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "So for an example,"
+    } ]
+  }, {
+    "tStartMs": 142953,
+    "dDurationMs": 1567,
+    "segs": [ {
+      "utf8": "if I just want to add a subtitle here,"
+    } ]
+  }, {
+    "tStartMs": 144520,
+    "dDurationMs": 1320,
+    "segs": [ {
+      "utf8": "I click on Type manually."
+    } ]
+  }, {
+    "tStartMs": 145840,
+    "dDurationMs": 1070,
+    "segs": [ {
+      "utf8": "And then at the beginning,"
+    } ]
+  }, {
+    "tStartMs": 146910,
+    "dDurationMs": 1477,
+    "segs": [ {
+      "utf8": "let's listen to what I say."
+    } ]
+  }, {
+    "tStartMs": 148387,
+    "dDurationMs": 2103,
+    "segs": [ {
+      "utf8": "\"So I've got this video.\""
+    } ]
+  }, {
+    "tStartMs": 150490,
+    "dDurationMs": 1417,
+    "segs": [ {
+      "utf8": "So my very first subtitle would be,"
+    } ]
+  }, {
+    "tStartMs": 151907,
+    "dDurationMs": 1053,
+    "segs": [ {
+      "utf8": "\"So I've got this video.\""
+    } ]
+  }, {
+    "tStartMs": 152960,
+    "dDurationMs": 5000,
+    "segs": [ {
+      "utf8": "So I've got this video."
+    } ]
+  }, {
+    "tStartMs": 158190,
+    "dDurationMs": 1630,
+    "segs": [ {
+      "utf8": "Perfect. Now, as you can see"
+    } ]
+  }, {
+    "tStartMs": 159820,
+    "dDurationMs": 2440,
+    "segs": [ {
+      "utf8": "for the timestamps for this subtitle,"
+    } ]
+  }, {
+    "tStartMs": 162260,
+    "dDurationMs": 3420,
+    "segs": [ {
+      "utf8": "we go from zero seconds to 1.29 seconds."
+    } ]
+  }, {
+    "tStartMs": 165680,
+    "dDurationMs": 940,
+    "segs": [ {
+      "utf8": "So if I play it back"
+    } ]
+  }, {
+    "tStartMs": 166620,
+    "dDurationMs": 900,
+    "segs": [ {
+      "utf8": "and we pay attention here,"
+    } ]
+  }, {
+    "tStartMs": 167520,
+    "dDurationMs": 2367,
+    "segs": [ {
+      "utf8": "we can actually see the\nsubtitle in the box."
+    } ]
+  }, {
+    "tStartMs": 169887,
+    "dDurationMs": 910,
+    "segs": [ {
+      "utf8": "\"So I've got this video"
+    } ]
+  }, {
+    "tStartMs": 170797,
+    "dDurationMs": 2343,
+    "segs": [ {
+      "utf8": "and I want to add subtitles to it.\""
+    } ]
+  }, {
+    "tStartMs": 173140,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "So as you can see,"
+    } ]
+  }, {
+    "tStartMs": 173973,
+    "dDurationMs": 1617,
+    "segs": [ {
+      "utf8": "our subtitle is dragging a little bit,"
+    } ]
+  }, {
+    "tStartMs": 175590,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "because it disappears"
+    } ]
+  }, {
+    "tStartMs": 176423,
+    "dDurationMs": 1107,
+    "segs": [ {
+      "utf8": "after we've finished saying it."
+    } ]
+  }, {
+    "tStartMs": 177530,
+    "dDurationMs": 1090,
+    "segs": [ {
+      "utf8": "So here we can either go"
+    } ]
+  }, {
+    "tStartMs": 178620,
+    "dDurationMs": 2420,
+    "segs": [ {
+      "utf8": "and adjust timestamp right here,"
+    } ]
+  }, {
+    "tStartMs": 181040,
+    "dDurationMs": 1980,
+    "segs": [ {
+      "utf8": "or we can go and just click and drag it"
+    } ]
+  }, {
+    "tStartMs": 183020,
+    "dDurationMs": 1810,
+    "segs": [ {
+      "utf8": "directly within the timeline."
+    } ]
+  }, {
+    "tStartMs": 184830,
+    "dDurationMs": 1490,
+    "segs": [ {
+      "utf8": "And then I can click on Add caption"
+    } ]
+  }, {
+    "tStartMs": 186320,
+    "dDurationMs": 1270,
+    "segs": [ {
+      "utf8": "to add the next one."
+    } ]
+  }, {
+    "tStartMs": 187590,
+    "dDurationMs": 1617,
+    "segs": [ {
+      "utf8": "So let's see what I say next."
+    } ]
+  }, {
+    "tStartMs": 189207,
+    "dDurationMs": 1800,
+    "segs": [ {
+      "utf8": "\"And I want to add subtitles to it.\""
+    } ]
+  }, {
+    "tStartMs": 192730,
+    "dDurationMs": 997,
+    "segs": [ {
+      "utf8": "Okay. Here I say,"
+    } ]
+  }, {
+    "tStartMs": 193727,
+    "dDurationMs": 5000,
+    "segs": [ {
+      "utf8": "\"And I want to add subtitles to it.\""
+    } ]
+  }, {
+    "tStartMs": 199320,
+    "dDurationMs": 1970,
+    "segs": [ {
+      "utf8": "So now I've got my first two subtitles."
+    } ]
+  }, {
+    "tStartMs": 201290,
+    "dDurationMs": 1120,
+    "segs": [ {
+      "utf8": "And that's how you add subtitles"
+    } ]
+  }, {
+    "tStartMs": 202410,
+    "dDurationMs": 940,
+    "segs": [ {
+      "utf8": "to your YouTube video."
+    } ]
+  }, {
+    "tStartMs": 203350,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "You can understand"
+    } ]
+  }, {
+    "tStartMs": 204183,
+    "dDurationMs": 1377,
+    "segs": [ {
+      "utf8": "that it can be very time consuming."
+    } ]
+  }, {
+    "tStartMs": 205560,
+    "dDurationMs": 2080,
+    "segs": [ {
+      "utf8": "Once you've finished adding\nall of your subtitles,"
+    } ]
+  }, {
+    "tStartMs": 207640,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "all you want to do"
+    } ]
+  }, {
+    "tStartMs": 208473,
+    "dDurationMs": 1437,
+    "segs": [ {
+      "utf8": "is make sure you click Done"
+    } ]
+  }, {
+    "tStartMs": 209910,
+    "dDurationMs": 1510,
+    "segs": [ {
+      "utf8": "in the top right"
+    } ]
+  }, {
+    "tStartMs": 211420,
+    "dDurationMs": 2150,
+    "segs": [ {
+      "utf8": "and then YouTube will save your subtitles."
+    } ]
+  }, {
+    "tStartMs": 213570,
+    "dDurationMs": 1190,
+    "segs": [ {
+      "utf8": "However, as you notice"
+    } ]
+  }, {
+    "tStartMs": 214760,
+    "dDurationMs": 1030,
+    "segs": [ {
+      "utf8": "this takes a lot of time,"
+    } ]
+  }, {
+    "tStartMs": 215790,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "so here's how to automatically generate"
+    } ]
+  }, {
+    "tStartMs": 217310,
+    "dDurationMs": 1930,
+    "segs": [ {
+      "utf8": "a subtitle file for your video."
+    } ]
+  }, {
+    "tStartMs": 219240,
+    "dDurationMs": 1160,
+    "segs": [ {
+      "utf8": "So we're going to head over"
+    } ]
+  }, {
+    "tStartMs": 220400,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "to a website called veed.io."
+    } ]
+  }, {
+    "tStartMs": 222360,
+    "dDurationMs": 1110,
+    "segs": [ {
+      "utf8": "You can either head over to Google"
+    } ]
+  }, {
+    "tStartMs": 223470,
+    "dDurationMs": 1900,
+    "segs": [ {
+      "utf8": "and google VEED, which is V-E-E-D."
+    } ]
+  }, {
+    "tStartMs": 225370,
+    "dDurationMs": 1430,
+    "segs": [ {
+      "utf8": "If not, as usual link is gonna be"
+    } ]
+  }, {
+    "tStartMs": 226800,
+    "dDurationMs": 1650,
+    "segs": [ {
+      "utf8": "in the description down below."
+    } ]
+  }, {
+    "tStartMs": 228450,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "Once you're on VEED,"
+    } ]
+  }, {
+    "tStartMs": 229283,
+    "dDurationMs": 947,
+    "segs": [ {
+      "utf8": "if you don't already have an account,"
+    } ]
+  }, {
+    "tStartMs": 230230,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "you can create an account for free."
+    } ]
+  }, {
+    "tStartMs": 231750,
+    "dDurationMs": 1470,
+    "segs": [ {
+      "utf8": "And if you do, we're just gonna click"
+    } ]
+  }, {
+    "tStartMs": 233220,
+    "dDurationMs": 1760,
+    "segs": [ {
+      "utf8": "on the Create New Project button."
+    } ]
+  }, {
+    "tStartMs": 234980,
+    "dDurationMs": 2230,
+    "segs": [ {
+      "utf8": "Here we're taken to the upload screen"
+    } ]
+  }, {
+    "tStartMs": 237210,
+    "dDurationMs": 1800,
+    "segs": [ {
+      "utf8": "and we're just gonna\nclick on Upload a File."
+    } ]
+  }, {
+    "tStartMs": 239010,
+    "dDurationMs": 2130,
+    "segs": [ {
+      "utf8": "Select our YouTube video, click Open."
+    } ]
+  }, {
+    "tStartMs": 241140,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "And as you can see,"
+    } ]
+  }, {
+    "tStartMs": 241973,
+    "dDurationMs": 1157,
+    "segs": [ {
+      "utf8": "our YouTube video is now imported"
+    } ]
+  }, {
+    "tStartMs": 243130,
+    "dDurationMs": 1900,
+    "segs": [ {
+      "utf8": "into VEED's Video Editor."
+    } ]
+  }, {
+    "tStartMs": 245030,
+    "dDurationMs": 1877,
+    "segs": [ {
+      "utf8": "So now if we take a look and press play."
+    } ]
+  }, {
+    "tStartMs": 246907,
+    "dDurationMs": 1323,
+    "segs": [ {
+      "utf8": "\"So I've got this video.\""
+    } ]
+  }, {
+    "tStartMs": 248230,
+    "dDurationMs": 1970,
+    "segs": [ {
+      "utf8": "We have the exact same video."
+    } ]
+  }, {
+    "tStartMs": 250200,
+    "dDurationMs": 2710,
+    "segs": [ {
+      "utf8": "And basically to automatically\ngenerate subtitles"
+    } ]
+  }, {
+    "tStartMs": 252910,
+    "dDurationMs": 1460,
+    "segs": [ {
+      "utf8": "for my YouTube video,"
+    } ]
+  }, {
+    "tStartMs": 254370,
+    "dDurationMs": 2170,
+    "segs": [ {
+      "utf8": "all I have to do is\nclick on the Subtitle tab"
+    } ]
+  }, {
+    "tStartMs": 256540,
+    "dDurationMs": 1140,
+    "segs": [ {
+      "utf8": "in the left toolbar."
+    } ]
+  }, {
+    "tStartMs": 257680,
+    "dDurationMs": 1660,
+    "segs": [ {
+      "utf8": "And here again, we've got three options"
+    } ]
+  }, {
+    "tStartMs": 259340,
+    "dDurationMs": 1720,
+    "segs": [ {
+      "utf8": "and this time one of the options"
+    } ]
+  }, {
+    "tStartMs": 261060,
+    "dDurationMs": 1460,
+    "segs": [ {
+      "utf8": "is Auto-Transcribe."
+    } ]
+  }, {
+    "tStartMs": 262520,
+    "dDurationMs": 890,
+    "segs": [ {
+      "utf8": "And as you can see here,"
+    } ]
+  }, {
+    "tStartMs": 263410,
+    "dDurationMs": 1780,
+    "segs": [ {
+      "utf8": "it says automatically add subtitles"
+    } ]
+  }, {
+    "tStartMs": 265190,
+    "dDurationMs": 1020,
+    "segs": [ {
+      "utf8": "to your video."
+    } ]
+  }, {
+    "tStartMs": 266210,
+    "dDurationMs": 1370,
+    "segs": [ {
+      "utf8": "So if I click on this,"
+    } ]
+  }, {
+    "tStartMs": 267580,
+    "dDurationMs": 1460,
+    "segs": [ {
+      "utf8": "I then select the language"
+    } ]
+  }, {
+    "tStartMs": 269040,
+    "dDurationMs": 2300,
+    "segs": [ {
+      "utf8": "that I want to automatically transcribe"
+    } ]
+  }, {
+    "tStartMs": 271340,
+    "dDurationMs": 1790,
+    "segs": [ {
+      "utf8": "and turn into subtitles."
+    } ]
+  }, {
+    "tStartMs": 273130,
+    "dDurationMs": 2030,
+    "segs": [ {
+      "utf8": "Here as you can see, I've got English."
+    } ]
+  }, {
+    "tStartMs": 275160,
+    "dDurationMs": 1700,
+    "segs": [ {
+      "utf8": "And I'm just gonna stay with English."
+    } ]
+  }, {
+    "tStartMs": 276860,
+    "dDurationMs": 1630,
+    "segs": [ {
+      "utf8": "Then I click on Start."
+    } ]
+  }, {
+    "tStartMs": 278490,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "And as you can see,"
+    } ]
+  }, {
+    "tStartMs": 279323,
+    "dDurationMs": 1737,
+    "segs": [ {
+      "utf8": "this process may take a few seconds"
+    } ]
+  }, {
+    "tStartMs": 281060,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "to a few minutes,"
+    } ]
+  }, {
+    "tStartMs": 281893,
+    "dDurationMs": 1647,
+    "segs": [ {
+      "utf8": "depending on the length of your video"
+    } ]
+  }, {
+    "tStartMs": 283540,
+    "dDurationMs": 2930,
+    "segs": [ {
+      "utf8": "to automatically transcribe\nyour videos audio into text"
+    } ]
+  }, {
+    "tStartMs": 286470,
+    "dDurationMs": 2443,
+    "segs": [ {
+      "utf8": "and turn that text into subtitles."
+    } ]
+  }, {
+    "tStartMs": 289920,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "So as you can see"
+    } ]
+  }, {
+    "tStartMs": 290753,
+    "dDurationMs": 1387,
+    "segs": [ {
+      "utf8": "VEED has just finished generating"
+    } ]
+  }, {
+    "tStartMs": 292140,
+    "dDurationMs": 1580,
+    "segs": [ {
+      "utf8": "the subtitles for our video."
+    } ]
+  }, {
+    "tStartMs": 293720,
+    "dDurationMs": 1650,
+    "segs": [ {
+      "utf8": "And now the first thing you notice is"
+    } ]
+  }, {
+    "tStartMs": 295370,
+    "dDurationMs": 967,
+    "segs": [ {
+      "utf8": "that our sentence."
+    } ]
+  }, {
+    "tStartMs": 296337,
+    "dDurationMs": 1043,
+    "segs": [ {
+      "utf8": "\"So I've got this video"
+    } ]
+  }, {
+    "tStartMs": 297380,
+    "dDurationMs": 2260,
+    "segs": [ {
+      "utf8": "and I want to add subtitles to it.\""
+    } ]
+  }, {
+    "tStartMs": 299640,
+    "dDurationMs": 1100,
+    "segs": [ {
+      "utf8": "This is the exact video"
+    } ]
+  }, {
+    "tStartMs": 300740,
+    "dDurationMs": 1250,
+    "segs": [ {
+      "utf8": "that we typed out manually"
+    } ]
+  }, {
+    "tStartMs": 301990,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "within YouTube's studio."
+    } ]
+  }, {
+    "tStartMs": 304390,
+    "dDurationMs": 1917,
+    "segs": [ {
+      "utf8": "So now if I press play and we take a look."
+    } ]
+  }, {
+    "tStartMs": 306307,
+    "dDurationMs": 1223,
+    "segs": [ {
+      "utf8": "\"So I've got this video"
+    } ]
+  }, {
+    "tStartMs": 307530,
+    "dDurationMs": 1780,
+    "segs": [ {
+      "utf8": "and I want to add subtitles to it."
+    } ]
+  }, {
+    "tStartMs": 309310,
+    "dDurationMs": 1110,
+    "segs": [ {
+      "utf8": "Hey, everyone, my name is Alec."
+    } ]
+  }, {
+    "tStartMs": 310420,
+    "dDurationMs": 1200,
+    "segs": [ {
+      "utf8": "And in this video, I'm\ngonna be showing you"
+    } ]
+  }, {
+    "tStartMs": 311620,
+    "dDurationMs": 2190,
+    "segs": [ {
+      "utf8": "how to add subtitles to any video online."
+    } ]
+  }, {
+    "tStartMs": 313810,
+    "dDurationMs": 1760,
+    "segs": [ {
+      "utf8": "And to get started.\""
+    } ]
+  }, {
+    "tStartMs": 315570,
+    "dDurationMs": 850,
+    "segs": [ {
+      "utf8": "So, as you can see,"
+    } ]
+  }, {
+    "tStartMs": 316420,
+    "dDurationMs": 2120,
+    "segs": [ {
+      "utf8": "we've automatically\ngenerated the subtitles"
+    } ]
+  }, {
+    "tStartMs": 318540,
+    "dDurationMs": 1690,
+    "segs": [ {
+      "utf8": "for our video."
+    } ]
+  }, {
+    "tStartMs": 320230,
+    "dDurationMs": 1470,
+    "segs": [ {
+      "utf8": "Now, if you want to change"
+    } ]
+  }, {
+    "tStartMs": 321700,
+    "dDurationMs": 1900,
+    "segs": [ {
+      "utf8": "and adjust a few things, for example,"
+    } ]
+  }, {
+    "tStartMs": 323600,
+    "dDurationMs": 2370,
+    "segs": [ {
+      "utf8": "in this automatically\ngenerated transcript,"
+    } ]
+  }, {
+    "tStartMs": 325970,
+    "dDurationMs": 1470,
+    "segs": [ {
+      "utf8": "as you can see here, it says, Alex,"
+    } ]
+  }, {
+    "tStartMs": 327440,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "instead of Alec,"
+    } ]
+  }, {
+    "tStartMs": 328273,
+    "dDurationMs": 1517,
+    "segs": [ {
+      "utf8": "so I'm just gonna quickly correct that,"
+    } ]
+  }, {
+    "tStartMs": 329790,
+    "dDurationMs": 1660,
+    "segs": [ {
+      "utf8": "but this is a very common mistake,"
+    } ]
+  }, {
+    "tStartMs": 331450,
+    "dDurationMs": 980,
+    "segs": [ {
+      "utf8": "even on the iPhone,"
+    } ]
+  }, {
+    "tStartMs": 332430,
+    "dDurationMs": 2430,
+    "segs": [ {
+      "utf8": "my name is always auto corrected to Alex,"
+    } ]
+  }, {
+    "tStartMs": 334860,
+    "dDurationMs": 870,
+    "segs": [ {
+      "utf8": "but I always recommend"
+    } ]
+  }, {
+    "tStartMs": 335730,
+    "dDurationMs": 900,
+    "segs": [ {
+      "utf8": "just quickly going through"
+    } ]
+  }, {
+    "tStartMs": 336630,
+    "dDurationMs": 1270,
+    "segs": [ {
+      "utf8": "and checking your subtitles."
+    } ]
+  }, {
+    "tStartMs": 337900,
+    "dDurationMs": 1890,
+    "segs": [ {
+      "utf8": "But just from the first sentence,"
+    } ]
+  }, {
+    "tStartMs": 339790,
+    "dDurationMs": 2160,
+    "segs": [ {
+      "utf8": "we can see that it's\nalready pretty accurate."
+    } ]
+  }, {
+    "tStartMs": 341950,
+    "dDurationMs": 1900,
+    "segs": [ {
+      "utf8": "And then to download it as an SRT file"
+    } ]
+  }, {
+    "tStartMs": 343850,
+    "dDurationMs": 1450,
+    "segs": [ {
+      "utf8": "so we can upload it to YouTube,"
+    } ]
+  }, {
+    "tStartMs": 345300,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "all we're going to do"
+    } ]
+  }, {
+    "tStartMs": 346133,
+    "dDurationMs": 1927,
+    "segs": [ {
+      "utf8": "is click on the Options tab right here."
+    } ]
+  }, {
+    "tStartMs": 348060,
+    "dDurationMs": 2550,
+    "segs": [ {
+      "utf8": "And then here we have the\nDownload Subtitles section."
+    } ]
+  }, {
+    "tStartMs": 350610,
+    "dDurationMs": 1130,
+    "segs": [ {
+      "utf8": "And we have multiple formats"
+    } ]
+  }, {
+    "tStartMs": 351740,
+    "dDurationMs": 2560,
+    "segs": [ {
+      "utf8": "which we can download our subtitles as."
+    } ]
+  }, {
+    "tStartMs": 354300,
+    "dDurationMs": 2170,
+    "segs": [ {
+      "utf8": "And we're just going to select SRT Format"
+    } ]
+  }, {
+    "tStartMs": 356470,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "which is the subtitle format,"
+    } ]
+  }, {
+    "tStartMs": 358790,
+    "dDurationMs": 1260,
+    "segs": [ {
+      "utf8": "click on Download."
+    } ]
+  }, {
+    "tStartMs": 360050,
+    "dDurationMs": 970,
+    "segs": [ {
+      "utf8": "And as you can see here,"
+    } ]
+  }, {
+    "tStartMs": 361020,
+    "dDurationMs": 1780,
+    "segs": [ {
+      "utf8": "we now have our SRT file."
+    } ]
+  }, {
+    "tStartMs": 362800,
+    "dDurationMs": 2600,
+    "segs": [ {
+      "utf8": "So I'm going to head over back to YouTube"
+    } ]
+  }, {
+    "tStartMs": 365400,
+    "dDurationMs": 1490,
+    "segs": [ {
+      "utf8": "and this time I'm just going to delete"
+    } ]
+  }, {
+    "tStartMs": 366890,
+    "dDurationMs": 2030,
+    "segs": [ {
+      "utf8": "the subtitles that I manually typed in."
+    } ]
+  }, {
+    "tStartMs": 368920,
+    "dDurationMs": 2000,
+    "segs": [ {
+      "utf8": "And if we click on Add again,"
+    } ]
+  }, {
+    "tStartMs": 370920,
+    "dDurationMs": 2700,
+    "segs": [ {
+      "utf8": "here we're going to\nclick on Upload a file."
+    } ]
+  }, {
+    "tStartMs": 373620,
+    "dDurationMs": 1410,
+    "segs": [ {
+      "utf8": "I'm going to choose With timing"
+    } ]
+  }, {
+    "tStartMs": 375030,
+    "dDurationMs": 2370,
+    "segs": [ {
+      "utf8": "because our subtitle file has timing."
+    } ]
+  }, {
+    "tStartMs": 377400,
+    "dDurationMs": 1220,
+    "segs": [ {
+      "utf8": "I click Continue."
+    } ]
+  }, {
+    "tStartMs": 378620,
+    "dDurationMs": 1450,
+    "segs": [ {
+      "utf8": "And then I'm just going to select"
+    } ]
+  }, {
+    "tStartMs": 380070,
+    "dDurationMs": 940,
+    "segs": [ {
+      "utf8": "the SRT file"
+    } ]
+  }, {
+    "tStartMs": 381010,
+    "dDurationMs": 2770,
+    "segs": [ {
+      "utf8": "that we've just automatically\ngenerated using VEED."
+    } ]
+  }, {
+    "tStartMs": 383780,
+    "dDurationMs": 2290,
+    "segs": [ {
+      "utf8": "Click Open and now as you can see,"
+    } ]
+  }, {
+    "tStartMs": 386070,
+    "dDurationMs": 1250,
+    "segs": [ {
+      "utf8": "all of the subtitles"
+    } ]
+  }, {
+    "tStartMs": 387320,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "with the corrections that I made"
+    } ]
+  }, {
+    "tStartMs": 389200,
+    "dDurationMs": 3100,
+    "segs": [ {
+      "utf8": "have been imported into YouTube."
+    } ]
+  }, {
+    "tStartMs": 392300,
+    "dDurationMs": 1620,
+    "segs": [ {
+      "utf8": "Now I can just click Done."
+    } ]
+  }, {
+    "tStartMs": 393920,
+    "dDurationMs": 1810,
+    "segs": [ {
+      "utf8": "And that is how to upload subtitles"
+    } ]
+  }, {
+    "tStartMs": 395730,
+    "dDurationMs": 1290,
+    "segs": [ {
+      "utf8": "to a YouTube video"
+    } ]
+  }, {
+    "tStartMs": 397020,
+    "dDurationMs": 2820,
+    "segs": [ {
+      "utf8": "after YouTube's new upload process update."
+    } ]
+  }, {
+    "tStartMs": 399840,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "If you have any questions"
+    } ]
+  }, {
+    "tStartMs": 400673,
+    "dDurationMs": 1767,
+    "segs": [ {
+      "utf8": "about adding subtitles to a YouTube video,"
+    } ]
+  }, {
+    "tStartMs": 402440,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "I would love to hear them"
+    } ]
+  }, {
+    "tStartMs": 403273,
+    "dDurationMs": 1367,
+    "segs": [ {
+      "utf8": "in the comment section down below."
+    } ]
+  }, {
+    "tStartMs": 404640,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "And if you enjoyed this video"
+    } ]
+  }, {
+    "tStartMs": 405473,
+    "dDurationMs": 1087,
+    "segs": [ {
+      "utf8": "and you found it helpful"
+    } ]
+  }, {
+    "tStartMs": 406560,
+    "dDurationMs": 1570,
+    "segs": [ {
+      "utf8": "as always please hit the like button,"
+    } ]
+  }, {
+    "tStartMs": 408130,
+    "dDurationMs": 1070,
+    "segs": [ {
+      "utf8": "the subscribe button"
+    } ]
+  }, {
+    "tStartMs": 409200,
+    "dDurationMs": 1065,
+    "segs": [ {
+      "utf8": "and the notification bell."
+    } ]
+  }, {
+    "tStartMs": 410265,
+    "dDurationMs": 1088,
+    "segs": [ {
+      "utf8": "Thanks for watching."
+    } ]
+  } ]
+}

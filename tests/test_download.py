@@ -39,3 +39,25 @@ def test_caption_is_present(mock_url_without_cc, mock_url_with_cc):
     is_caption_available = downloader.check_for_caption(mock_url_with_cc)
 
     assert is_caption_available is True
+
+
+def test_convert_json(mock_json):
+    # Testing function to convert json to text
+    from athena.model import Downloader
+
+    downloader = Downloader()
+    data = downloader.convert_json(mock_json)
+    assert type(data) is list
+    assert len(data) > 0
+    assert type(data[0]) is str
+
+
+def test_convert_xml(mock_xml):
+    # Testing function to convert json to text
+    from athena.model import Downloader
+
+    downloader = Downloader()
+    data = downloader.convert_xml(mock_xml)
+    assert type(data) is list
+    assert len(data) > 0
+    assert type(data[0]) is str

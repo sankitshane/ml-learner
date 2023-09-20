@@ -41,8 +41,8 @@ class Downloader:
 
         for child in json_text["events"]:
             for seg in child['segs']:
-                if "utf-8" in seg:
-                    sentences.append(seg['utf-8'])
+                if "utf8" in seg:
+                    sentences.append(seg['utf8'])
 
         return sentences
 

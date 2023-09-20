@@ -16,12 +16,12 @@ def mock_url_with_cc():
 
 
 @pytest.fixture(scope='session')
-def mock_text():
-    with open(path.join(FIXTURUE_PATH, "json_output.txt")) as f:
-        yield f
+def mock_json():
+    with open(path.join(FIXTURUE_PATH, "json_output.json")) as f:
+        yield f.read().encode('utf-8')
 
 
 @pytest.fixture(scope='session')
 def mock_xml():
-    with open(path.join(FIXTURUE_PATH), "xml_output.xml") as f:
-        yield f
+    with open(path.join(FIXTURUE_PATH, "xml_output.xml"), 'rb') as f:
+        yield f.read()

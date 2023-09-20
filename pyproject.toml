@@ -11,6 +11,7 @@ pytube = "^15.0.0"
 transformers = "^4.32.1"
 torch = "^2.0.1"
 youtube-dl = {git = "https://github.com/ytdl-org/youtube-dl.git"}
+pytest-cov = "^4.1.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -22,3 +23,18 @@ flake8 = "^6.1.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+py_version = "auto"
+skip_gitignore = true
+line_length = 80
+
+[tool.black]
+line-length = 80
+target-version = ["py39"]
+
+[tool.pytest.ini_options]
+pythonpath = [ "athena" ]
+addopts = "-ra --cov athena"

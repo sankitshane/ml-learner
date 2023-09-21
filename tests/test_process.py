@@ -1,5 +1,6 @@
-import os
 import json
+import os
+
 
 def test_input_video_urls():
     # Testing the input is a list of urls
@@ -19,6 +20,6 @@ def test_process_video_1_by_1():
     assert os.path.exists('result/result.json')
     result = json.load(open('result/result.json'))
     assert type(result) is dict
-    
+
     for url in video_urls:
         assert url in result

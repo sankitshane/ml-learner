@@ -106,3 +106,21 @@ class Converter:
                             do_sample=False
                         )
         return summerized_data[0]
+
+
+class Result:
+    def __init__(self):
+        self._filename = os.path.join("result", "result.json")
+        if not os.path.exists(self._filename):
+            self._result = dict()
+        else:
+            self._result = json.load(open(self._filename))
+
+    @property
+    def value(self):
+        return self._result
+
+    @value.setter
+    def value(self, value):
+        self._result = value
+        json.dump(value, open(self._filename, 'w'), indent=4)

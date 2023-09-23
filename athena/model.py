@@ -1,4 +1,4 @@
-import json
+import os, json
 import xml.etree.ElementTree as ET
 
 import requests
@@ -11,6 +11,9 @@ class Downloader:
     def __init__(self):
         self.cc_url = None
         self.cc_file_type = None
+
+    def delete_video(self, path):
+        os.remove(path)
 
     def download_video(self, url):
         yt = YouTube(url)

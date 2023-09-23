@@ -16,6 +16,11 @@ def mock_url_with_cc():
     yield "https://www.youtube.com/watch?v=Ad_TEk94B9Q"
 
 
+@pytest.fixture(scope="session")
+def mock_data():
+    with open(path.join(FIXTURUE_PATH, "example.txt")) as f:
+        yield f.read()
+
 @pytest.fixture(scope='session')
 def mock_json():
     with open(path.join(FIXTURUE_PATH, "json_output.json")) as f:

@@ -95,3 +95,13 @@ class Converter:
         pipe = pipeline(model=self.model)
         text = pipe(path, chunk_length_s=10)
         return text['text']
+
+    def summarize(self, text):
+        summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+        summerized_data = summarizer(
+                            text,
+                            max_length=130,
+                            min_length=30,
+                            do_sample=False
+                        )
+        return summerized_data[0]

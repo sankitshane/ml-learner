@@ -1,5 +1,6 @@
 import json
 import os
+from datetime import datetime
 
 from model import Converter, Downloader
 
@@ -30,8 +31,21 @@ def get_caption(url):
     return caption
 
 
+def save_summary(url, summary, model):
+    if url not in result:
+        result[url] = dict()
+
+    result[url]["summary"] = summary
+    result[url]["model"] = model
+    result[url]["timestamp"] = datetime.now().strftime("%Y-%m-%d %H-%M-%S")
+
+    json.dump(result, open(result_file_name, 'w'), indent=4)
+
+
 def process():
     for url in video_urls:
-        result[url] = None
+        caption = get_caption(url)
+        summary = Converter().summarize(caption)
+        save_summary(url, summary, Converter().summarize_model)
 
     json.dump(result, open(result_file_name, 'w'), indent=4)

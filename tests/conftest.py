@@ -21,6 +21,7 @@ def mock_data():
     with open(path.join(FIXTURUE_PATH, "example.txt")) as f:
         yield f.read()
 
+
 @pytest.fixture(scope='session')
 def mock_json():
     with open(path.join(FIXTURUE_PATH, "json_output.json")) as f:
@@ -33,28 +34,28 @@ def mock_xml():
         yield f.read()
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture()
 def mock_dw_video():
     from athena.main import Downloader
     with mock.patch.object(Downloader, "download_video") as mock_dw_video:
         yield mock_dw_video
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture()
 def mock_dw_caption():
     from athena.main import Downloader
     with mock.patch.object(Downloader, "download_caption") as mock_dw_caption:
         yield mock_dw_caption
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture()
 def mock_ck_caption():
     from athena.main import Downloader
     with mock.patch.object(Downloader, "check_for_caption") as mock_ck_caption:
         yield mock_ck_caption
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture()
 def mock_del():
     from athena.main import Downloader
     with mock.patch.object(Downloader, "delete_video") as mock_del:
@@ -62,8 +63,21 @@ def mock_del():
         yield mock_del
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture()
 def mock_cv_video():
     from athena.main import Converter
     with mock.patch.object(Converter, "speech_to_text") as mock_cv_video:
         yield mock_cv_video
+
+
+@pytest.fixture()
+def mock_sm_video():
+    from athena.main import Converter
+    with mock.patch.object(Converter, "summarize") as mock_sm_video:
+        yield mock_sm_video
+
+
+@pytest.fixture()
+def mock_caption():
+    with mock.patch("athena.main.get_caption") as mock_caption:
+        yield mock_caption

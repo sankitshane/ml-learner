@@ -90,6 +90,7 @@ class Downloader:
 class Converter:
     def __init__(self):
         self.model = "facebook/wav2vec2-large-960h-lv60-self"
+        self.summarize_model = "facebook/bart-large-cnn"
 
     def speech_to_text(self, path="result/audio.mp4"):
         pipe = pipeline(model=self.model)
@@ -97,7 +98,7 @@ class Converter:
         return text['text']
 
     def summarize(self, text):
-        summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+        summarizer = pipeline("summarization", model=self.summarize_model)
         summerized_data = summarizer(
                             text,
                             max_length=130,

@@ -10,15 +10,17 @@ def test_input_video_urls():
     assert type(video_urls) is list
 
 
-def test_process_video_1_by_1():
+def test_process_video_1_by_1(mock_caption, mock_sm_video):
     # Testing processing one video at a time
+    mock_caption.return_value = "dummy"
+    mock_sm_video.return_value = "dummy summary"
 
     from athena.main import process, video_urls
-
+    path = 'result/result.json'
     process()
 
-    assert os.path.exists('result/result.json')
-    result = json.load(open('result/result.json'))
+    assert os.path.exists(path)
+    result = json.load(open(path))
     assert type(result) is dict
 
     for url in video_urls:
@@ -69,3 +71,22 @@ def test_download_not_needed(mock_dw_caption, mock_url_with_cc):
     caption = get_caption(mock_url_with_cc)
     assert type(caption) is str
     assert mock_dw_caption.call_count == 1
+
+
+def test_save_summary(mock_url_without_cc):
+    # Testing saving the generated summary in result
+
+    from athena.main import save_summary
+
+    path = 'result/result.json'
+    summary = "Dummy summary of the video"
+    model = "facebook/cnn"
+    save_summary(mock_url_without_cc, summary, model)
+
+    assert os.path.exists(path)
+    result = json.load(open(path))
+    assert type(result[mock_url_without_cc]) is dict
+    assert result[mock_url_without_cc]["summary"] == summary
+    assert result[mock_url_without_cc]["model"] == model
+    assert "timestamp" in result[mock_url_without_cc]
+    assert result[mock_url_without_cc]["timestamp"] is not None

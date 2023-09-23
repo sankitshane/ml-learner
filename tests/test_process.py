@@ -27,7 +27,7 @@ def test_process_video_1_by_1():
 
 def test_cc_common_format(mock_url_with_cc):
     # Testing both downloaded cc and video to text have common format
-    from athena.model import Downloader, Converter
+    from athena.model import Converter, Downloader
 
     downloader = Downloader()
     downloader.download_video(mock_url_with_cc)
@@ -39,9 +39,33 @@ def test_cc_common_format(mock_url_with_cc):
     cc_video_text = converter.speech_to_text(path)
 
     downloader.delete_video(path)
-    
-    caption_available = downloader.check_for_caption(mock_url_with_cc)
+
+    downloader.check_for_caption(mock_url_with_cc)
     cc_download_text = downloader.download_caption()
 
     assert type(cc_video_text) is str
     assert type(cc_download_text) is str
+
+
+def test_download_needed(mock_url_without_cc, mock_dw_video,
+                         mock_cv_video, mock_del):
+    # Testing video download only when cc is not present
+    mock_cv_video.return_value = "dummy"
+
+    from athena.main import get_caption
+
+    caption = get_caption(mock_url_without_cc)
+    assert type(caption) is str
+    assert mock_dw_video.call_count == 1
+    assert mock_cv_video.call_count == 1
+
+
+def test_download_not_needed(mock_dw_caption, mock_url_with_cc):
+    # Testing video download only when cc is not present
+    mock_dw_caption.return_value = "dummy"
+
+    from athena.main import get_caption
+
+    caption = get_caption(mock_url_with_cc)
+    assert type(caption) is str
+    assert mock_dw_caption.call_count == 1

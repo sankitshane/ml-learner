@@ -1,4 +1,5 @@
-import os, json
+import json
+import os
 import xml.etree.ElementTree as ET
 
 import requests
@@ -12,7 +13,7 @@ class Downloader:
         self.cc_url = None
         self.cc_file_type = None
 
-    def delete_video(self, path):
+    def delete_video(self, path="result/audio.mp4"):
         os.remove(path)
 
     def download_video(self, url):
@@ -90,7 +91,7 @@ class Converter:
     def __init__(self):
         self.model = "facebook/wav2vec2-large-960h-lv60-self"
 
-    def speech_to_text(self, path):
+    def speech_to_text(self, path="result/audio.mp4"):
         pipe = pipeline(model=self.model)
         text = pipe(path, chunk_length_s=10)
         return text['text']

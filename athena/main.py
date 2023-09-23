@@ -1,7 +1,7 @@
 import json
 import os
 
-from model import Downloader
+from model import Converter, Downloader
 
 result_file_name = "result/result.json"
 video_urls = [
@@ -16,9 +16,21 @@ else:
     result = json.load(open(result_file_name))
 
 
-def process():
-    client = Downloader()
+def get_caption(url):
+    downloader = Downloader()
+    if not downloader.check_for_caption(url):
+        print("no caption")
+        downloader.download_video(url)
+        caption = Converter().speech_to_text()
+        downloader.delete_video()
+    else:
+        print("caption exists")
+        caption = downloader.download_caption()
 
+    return caption
+
+
+def process():
     for url in video_urls:
         result[url] = None
 

@@ -93,4 +93,4 @@ class Converter:
     def speech_to_text(self, path):
         pipe = pipeline(model=self.model)
         text = pipe(path, chunk_length_s=10)
-        return text
+        return text['text']

@@ -1,3 +1,4 @@
+import json
 from os import path
 from unittest import mock
 
@@ -32,6 +33,13 @@ def mock_json():
 def mock_xml():
     with open(path.join(FIXTURUE_PATH, "xml_output.xml"), 'rb') as f:
         yield f.read()
+
+
+@pytest.fixture(scope='session')
+def mock_result():
+    with open(path.join(FIXTURUE_PATH, "dummy_result.json"), 'rb') as f:
+        data = f.read().decode('utf-8')
+        yield json.loads(data)
 
 
 @pytest.fixture()
@@ -97,7 +105,7 @@ def mock_json_load():
             mock.patch.object(json, "dump") as mock_dump:
         mock_load.return_value = {"hello": "world"}
         mock_dump.return_value = 100
-        yield mock_json_load
+        yield mock_load, mock_dump
 
 
 @pytest.fixture
@@ -106,3 +114,10 @@ def mock_open_file():
     mock_open = mock.mock_open()
     with mock.patch('builtins.open', mock_open):
         yield mock_open
+
+
+@pytest.fixture
+def mock_links():
+    # Creating mock links for input
+    with mock.patch("athena.main.links") as mock_links:
+        yield mock_links

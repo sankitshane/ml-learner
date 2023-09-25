@@ -1,7 +1,7 @@
 {
     "url_1" : {
         "summary": "summary_1",
-        "model": "model_1",
+        "model": "facebook/bart-large-cnn",
         "timestamp": "2023-09-25 00-00-00"
     },
     "url_2" : {
@@ -11,12 +11,12 @@
     },
     "url_3" : {
         "summary": "summary_3",
-        "model": "model_1",
+        "model": "facebook/bart-large-cnn",
         "timestamp": "2023-09-25 00-00-00"
     },
     "url_4" : {
         "summary": "summary_4",
-        "model": "model_1",
+        "model": "facebook/bart-large-cnn",
         "timestamp": "2023-09-01 00-00-00"
     }
 }

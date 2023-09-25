@@ -1,3 +1,5 @@
+from datetime import datetime, timedelta
+
 from input import links
 from model import Converter, Downloader, Result
 
@@ -17,6 +19,22 @@ def get_caption(url):
 def process():
     result = Result()
     for url in links():
+        if url in result.value:
+            renew = False
+            if result.value[url]["model"] == Converter().summarize_model:
+                renew = True
+
+            last_pull = datetime.strptime(
+                result.value[url]["timestamp"],
+                "%Y-%m-%d %H-%M-%S"
+            )
+            if last_pull < datetime.now() - timedelta(days=10):
+                renew = True
+
+            if renew:
+                continue
+
+        print(f"pass: {url}")
         caption = get_caption(url)
         summary = Converter().summarize(caption)
         result.save_summary(url, summary, Converter().summarize_model)

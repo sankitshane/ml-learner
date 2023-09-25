@@ -1,6 +1,7 @@
 import json
 import os
 import xml.etree.ElementTree as ET
+from datetime import datetime
 
 import requests
 import youtube_dl
@@ -120,7 +121,14 @@ class Result:
     def value(self):
         return self._result
 
-    @value.setter
-    def value(self, value):
-        self._result = value
-        json.dump(value, open(self._filename, 'w'), indent=4)
+    def save_summary(self, url, summary, model):
+        if url not in self._result:
+            self._result[url] = dict()
+
+        self._result[url]["summary"] = summary
+        self._result[url]["model"] = model
+        self._result[url]["timestamp"] = datetime.now().strftime(
+            "%Y-%m-%d %H-%M-%S"
+        )
+
+        json.dump(self._result, open(self._filename, 'w'), indent=4)

@@ -78,6 +78,31 @@ def mock_sm_video():
 
 
 @pytest.fixture()
+def mock_save():
+    from athena.main import Result
+    with mock.patch.object(Result, "save_summary") as mock_save:
+        yield mock_save
+
+
+@pytest.fixture()
 def mock_caption():
     with mock.patch("athena.main.get_caption") as mock_caption:
         yield mock_caption
+
+
+@pytest.fixture()
+def mock_json_load():
+    import json
+    with mock.patch.object(json, "load") as mock_load, \
+            mock.patch.object(json, "dump") as mock_dump:
+        mock_load.return_value = {"hello": "world"}
+        mock_dump.return_value = 100
+        yield mock_json_load
+
+
+@pytest.fixture
+def mock_open_file():
+    # Create a mock for the 'open' function using mock_open
+    mock_open = mock.mock_open()
+    with mock.patch('builtins.open', mock_open):
+        yield mock_open

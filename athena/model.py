@@ -1,6 +1,7 @@
 import json
 import os
 import xml.etree.ElementTree as ET
+from datetime import datetime
 
 import requests
 import youtube_dl
@@ -90,8 +91,44 @@ class Downloader:
 class Converter:
     def __init__(self):
         self.model = "facebook/wav2vec2-large-960h-lv60-self"
+        self.summarize_model = "facebook/bart-large-cnn"
 
     def speech_to_text(self, path="result/audio.mp4"):
         pipe = pipeline(model=self.model)
         text = pipe(path, chunk_length_s=10)
         return text['text']
+
+    def summarize(self, text):
+        summarizer = pipeline("summarization", model=self.summarize_model)
+        summerized_data = summarizer(
+                            text,
+                            max_length=130,
+                            min_length=30,
+                            do_sample=False
+                        )
+        return summerized_data[0]
+
+
+class Result:
+    def __init__(self):
+        self._filename = os.path.join("result", "result.json")
+        if not os.path.exists(self._filename):
+            self._result = dict()
+        else:
+            self._result = json.load(open(self._filename))
+
+    @property
+    def value(self):
+        return self._result
+
+    def save_summary(self, url, summary, model):
+        if url not in self._result:
+            self._result[url] = dict()
+
+        self._result[url]["summary"] = summary
+        self._result[url]["model"] = model
+        self._result[url]["timestamp"] = datetime.now().strftime(
+            "%Y-%m-%d %H-%M-%S"
+        )
+
+        json.dump(self._result, open(self._filename, 'w'), indent=4)

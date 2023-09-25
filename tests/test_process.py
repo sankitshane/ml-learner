@@ -1,28 +1,28 @@
-import json
 import os
 
 
 def test_input_video_urls():
     # Testing the input is a list of urls
 
-    from athena.main import video_urls
+    from athena.input import links
 
-    assert type(video_urls) is list
+    assert type(links()) is list
 
 
-def test_process_video_1_by_1():
+def test_process_video_1_by_1(mock_caption, mock_sm_video, mock_save):
     # Testing processing one video at a time
+    mock_caption.return_value = "dummy"
+    mock_sm_video.return_value = "dummy summary"
+    mock_save.return_value = None
 
-    from athena.main import process, video_urls
-
+    from athena.input import links
+    from athena.main import process
+    video_urls = links()
     process()
 
-    assert os.path.exists('result/result.json')
-    result = json.load(open('result/result.json'))
-    assert type(result) is dict
-
-    for url in video_urls:
-        assert url in result
+    assert mock_caption.call_count == len(video_urls)
+    assert mock_sm_video.call_count == len(video_urls)
+    assert mock_save.call_count == len(video_urls)
 
 
 def test_cc_common_format(mock_url_with_cc):
@@ -69,3 +69,23 @@ def test_download_not_needed(mock_dw_caption, mock_url_with_cc):
     caption = get_caption(mock_url_with_cc)
     assert type(caption) is str
     assert mock_dw_caption.call_count == 1
+
+
+def test_resummarisation(mock_links, mock_json_load, mock_open_file,
+                         mock_result, mock_caption, mock_sm_video, mock_save):
+    # Testing filter to re-run the process
+
+    mock_load, _ = mock_json_load
+    mock_links.return_value = [f"url_{i}" for i in range(5)]
+    mock_load.return_value = mock_result
+    mock_caption.return_value = "dummy"
+    mock_sm_video.return_value = "dummy summary"
+    mock_save.return_value = None
+
+    from athena.main import process
+
+    process()
+
+    assert mock_caption.call_count == 2
+    assert mock_sm_video.call_count == 2
+    assert mock_save.call_count == 2

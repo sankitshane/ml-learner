@@ -27,3 +27,13 @@ def test_download_and_convert(mock_url_without_cc):
 
     downloader.delete_video(path)
     assert os.path.exists(path) is False
+
+
+def test_summarise(mock_data):
+    # Testing summarise function
+
+    from athena.model import Converter
+
+    summarised_data = Converter().summarize(mock_data)
+    assert summarised_data is not None
+    assert type(summarised_data) is dict

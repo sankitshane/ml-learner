@@ -4,9 +4,9 @@ import os
 def test_input_video_urls():
     # Testing the input is a list of urls
 
-    from athena.main import video_urls
+    from athena.input import links
 
-    assert type(video_urls) is list
+    assert type(links()) is list
 
 
 def test_process_video_1_by_1(mock_caption, mock_sm_video, mock_save):
@@ -15,8 +15,9 @@ def test_process_video_1_by_1(mock_caption, mock_sm_video, mock_save):
     mock_sm_video.return_value = "dummy summary"
     mock_save.return_value = None
 
-    from athena.main import process, video_urls
-
+    from athena.input import links
+    from athena.main import process
+    video_urls = links()
     process()
 
     assert mock_caption.call_count == len(video_urls)

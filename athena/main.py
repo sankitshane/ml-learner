@@ -1,9 +1,5 @@
+from input import links
 from model import Converter, Downloader, Result
-
-video_urls = [
-    "https://www.youtube.com/watch?v=TWdGj-Im5gg",
-    "https://www.youtube.com/watch?v=UYk-gXv2-wc"
-]
 
 
 def get_caption(url):
@@ -20,7 +16,7 @@ def get_caption(url):
 
 def process():
     result = Result()
-    for url in video_urls:
+    for url in links():
         caption = get_caption(url)
         summary = Converter().summarize(caption)
         result.save_summary(url, summary, Converter().summarize_model)

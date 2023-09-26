@@ -70,7 +70,7 @@ class Downloader:
         cc_link = dict()
         with youtube_dl.YoutubeDL() as ydl:
             info_dict = ydl.extract_info(url, download=False)
-            if "en" in info_dict['subtitles']:
+            if "subtitles" in info_dict and "en" in info_dict['subtitles']:
                 english_cc = info_dict['subtitles']['en']
                 for cc_file in english_cc:
                     if cc_file['ext'].startswith('json'):

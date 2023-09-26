@@ -34,7 +34,10 @@ def process():
             if renew:
                 continue
 
-        print(f"pass: {url}")
         caption = get_caption(url)
         summary = Converter().summarize(caption)
         result.save_summary(url, summary, Converter().summarize_model)
+
+
+if __name__ == "__main__":
+    process()

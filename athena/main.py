@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 
 from input import links
+from log import logger
 from model import Converter, Downloader, Result
 
 
@@ -19,7 +20,9 @@ def get_caption(url):
 def process():
     result = Result()
     for url in links():
+        logger.debug(f"Working on url: {url}")
         if url in result.value:
+            logger.debug(f"url: {url} already present in DB")
             renew = False
             if result.value[url]["model"] == Converter().summarize_model:
                 renew = True
@@ -32,6 +35,9 @@ def process():
                 renew = True
 
             if renew:
+                logger.debug(
+                    f"url: {url} can't be summarised yet as its cached"
+                )
                 continue
 
         caption = get_caption(url)
@@ -40,4 +46,5 @@ def process():
 
 
 if __name__ == "__main__":
+    logger.debug("Start process ...")
     process()

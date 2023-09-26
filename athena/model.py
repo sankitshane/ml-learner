@@ -5,6 +5,7 @@ from datetime import datetime
 
 import requests
 import youtube_dl
+from log import logger
 from pytube import YouTube
 from transformers import pipeline
 
@@ -15,6 +16,7 @@ class Downloader:
         self.cc_file_type = None
 
     def delete_video(self, path="result/audio.mp4"):
+        logger.debug("Removing downloaded video")
         os.remove(path)
 
     def download_video(self, url):
@@ -24,13 +26,16 @@ class Downloader:
         audio_stream = yt.streams.filter(
             only_audio=True, file_extension="mp4").first()
 
+        logger.debug("Audio stream found ...")
         # Set the path where you want to save the audio file
         output_path = "result"
 
         # Download the audio
         audio_stream.download(output_path=output_path, filename="audio.mp4")
+        logger.debug("Audio downloaded from youtube")
 
     def convert_xml(self, binary):
+        logger.debug("Converting xml to text")
         xml_text = binary.decode('utf-8')
         root = ET.fromstring(xml_text)
         sentences = []
@@ -41,6 +46,7 @@ class Downloader:
         return sentences
 
     def convert_json(self, binary):
+        logger.debug("Converting json to text")
         json_text = json.loads(binary.decode('utf-8'))
         sentences = []
 
@@ -52,6 +58,7 @@ class Downloader:
         return sentences
 
     def download_caption(self):
+        logger.debug("Downloading caption")
         response = requests.get(self.cc_url)
 
         # Check if the request was successful (status code 200)
@@ -67,10 +74,12 @@ class Downloader:
         return " ".join(text)
 
     def check_for_caption(self, url):
+        logger.debug("Checking if caption is present")
         cc_link = dict()
         with youtube_dl.YoutubeDL() as ydl:
             info_dict = ydl.extract_info(url, download=False)
             if "subtitles" in info_dict and "en" in info_dict['subtitles']:
+                logger.debug("English caption is available")
                 english_cc = info_dict['subtitles']['en']
                 for cc_file in english_cc:
                     if cc_file['ext'].startswith('json'):
@@ -84,6 +93,8 @@ class Downloader:
                 elif 'srv' in cc_link:
                     self.cc_file_type = "srv"
                     self.cc_url = cc_link['srv']
+            else:
+                logger.warning("Did not find caption")
 
         return self.cc_url is not None
 
@@ -94,11 +105,13 @@ class Converter:
         self.summarize_model = "facebook/bart-large-cnn"
 
     def speech_to_text(self, path="result/audio.mp4"):
+        logger.debug("Converting speach to text")
         pipe = pipeline(model=self.model)
         text = pipe(path, chunk_length_s=10)
         return text['text']
 
     def summarize(self, text):
+        logger.debug("Extracting summary from text")
         summarizer = pipeline("summarization", model=self.summarize_model)
         summerized_data = summarizer(
                             text,

@@ -1,4 +1,5 @@
 import json
+from datetime import datetime, timedelta
 from os import path
 from unittest import mock
 
@@ -38,8 +39,14 @@ def mock_xml():
 @pytest.fixture(scope='session')
 def mock_result():
     with open(path.join(FIXTURUE_PATH, "dummy_result.json"), 'rb') as f:
-        data = f.read().decode('utf-8')
-        yield json.loads(data)
+        data = json.loads(f.read().decode('utf-8'))
+        curr = datetime.now()
+        for key in data:
+            data[key]["timestamp"] = curr.strftime("%Y-%m-%d %H-%M-%S")
+            if key == "url_4":
+                data[key]["timestamp"] = (curr - timedelta(days=11)).\
+                    strftime("%Y-%m-%d %H-%M-%S")
+        yield data
 
 
 @pytest.fixture()

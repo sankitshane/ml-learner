@@ -15,7 +15,7 @@ class Downloader:
         self.cc_url = None
         self.cc_file_type = None
 
-    def delete_video(self, path="result/audio.mp4"):
+    def delete_video(self, path="static/audio.mp4"):
         logger.debug("Removing downloaded video")
         os.remove(path)
 
@@ -28,7 +28,7 @@ class Downloader:
 
         logger.debug("Audio stream found ...")
         # Set the path where you want to save the audio file
-        output_path = "result"
+        output_path = "static"
 
         # Download the audio
         audio_stream.download(output_path=output_path, filename="audio.mp4")
@@ -104,7 +104,7 @@ class Converter:
         self.model = "facebook/wav2vec2-large-960h-lv60-self"
         self.summarize_model = "facebook/bart-large-cnn"
 
-    def speech_to_text(self, path="result/audio.mp4"):
+    def speech_to_text(self, path="static/audio.mp4"):
         logger.debug("Converting speach to text")
         pipe = pipeline(model=self.model)
         text = pipe(path, chunk_length_s=10)
@@ -124,7 +124,7 @@ class Converter:
 
 class Result:
     def __init__(self):
-        self._filename = os.path.join("result", "result.json")
+        self._filename = os.path.join("static", "result.json")
         if not os.path.exists(self._filename):
             self._result = dict()
         else:

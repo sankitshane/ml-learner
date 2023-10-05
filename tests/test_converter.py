@@ -18,7 +18,7 @@ def test_download_and_convert(mock_url_without_cc):
     downloader = Downloader()
     downloader.download_video(mock_url_without_cc)
 
-    path = "result/audio.mp4"
+    path = "static/audio.mp4"
     assert os.path.exists(path) is True
 
     converter = Converter()

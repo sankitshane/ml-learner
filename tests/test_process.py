@@ -32,7 +32,7 @@ def test_cc_common_format(mock_url_with_cc):
     downloader = Downloader()
     downloader.download_video(mock_url_with_cc)
 
-    path = "result/audio.mp4"
+    path = "static/audio.mp4"
     assert os.path.exists(path) is True
 
     converter = Converter()

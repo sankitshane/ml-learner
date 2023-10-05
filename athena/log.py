@@ -1,8 +1,9 @@
 import logging
+import os
 from logging.handlers import TimedRotatingFileHandler
 
 # Logging Setup
-log_file = "logs.log"
+log_file = os.path.join(os.getcwd(), "static", "log_file.log")
 backup_count = 2
 
 # Creating Logs

@@ -9,7 +9,7 @@ def test_download_audio_file(mock_url_without_cc):
     downloader = Downloader()
     downloader.download_video(mock_url_without_cc)
 
-    assert os.path.exists('result/audio.mp4')
+    assert os.path.exists('static/audio.mp4')
 
 
 def test_download_caption(mock_url_with_cc):

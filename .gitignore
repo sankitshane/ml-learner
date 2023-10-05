@@ -160,5 +160,5 @@ cython_debug/
 #.idea/
 
 .DS_Store
-/result
 /athena/input.py
+static/**

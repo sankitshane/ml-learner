@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    command: ["python", "main.py"]
+    volumes:
+      - disk_data:/app/static
+
+volumes:
+  disk_data:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: './static'
